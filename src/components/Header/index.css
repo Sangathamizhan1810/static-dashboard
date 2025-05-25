@@ -1,0 +1,178 @@
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 20px;
+  padding-top: 16px;
+  gap: 20px;
+}
+
+.logo-text {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+
+.logo-text h1 {
+  margin: 0;
+  font-size: 28px;
+  line-height: 1;
+}
+
+.search-bar-notification-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex: 2;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  background-color: #f1f1f1;
+  padding: 6px 12px;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.search-bar input {
+  border: none;
+  background: transparent;
+  outline: none;
+  margin-left: 8px;
+  width: 100%;
+  font-size: 16px;
+}
+
+.search-icon {
+  color: gray;
+  font-size: 18px;
+}
+
+.notification-icon {
+  font-size: 20px;
+  color: darkblue;
+  cursor: pointer;
+}
+
+.avatar-container {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  flex: 1;
+  justify-content: flex-end;
+}
+
+.avatar-icon {
+  font-size: 40px;
+  color: #555;
+  cursor: pointer;
+}
+
+.plus-icon {
+  font-size: 20px;
+  color: #5fc0d0;
+  cursor: pointer;
+}
+
+
+
+@media (max-width: 768px) {
+  .header-container {
+    padding: 0 12px;
+  }
+
+  .logo-text h1 {
+    font-size: 22px;
+  }
+
+  .search-bar-notification-container {
+    gap: 12px;
+    flex: 3;
+  }
+
+  .search-bar {
+    padding: 5px 8px;
+  }
+
+  .search-bar input {
+    font-size: 14px;
+  }
+
+  .notification-icon {
+    font-size: 18px;
+  }
+
+  .avatar-icon {
+    font-size: 36px;
+  }
+
+  .plus-icon {
+    font-size: 18px;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .header-container {
+    flex-wrap: wrap;
+    padding: 8px 10px;
+    gap: 10px;
+  }
+
+  .logo-text {
+    flex: 100%;
+    justify-content: center;
+    margin-bottom: 8px;
+  }
+
+  .logo-text h1 {
+    font-size: 20px;
+  }
+
+  .search-bar-notification-container {
+    flex: 100%;
+    justify-content: space-between;
+    gap: 10px;
+  }
+
+  .search-bar {
+    flex: 1 1 70%;
+    padding: 5px 8px;
+  }
+
+  .search-bar input {
+    font-size: 14px;
+  }
+
+
+  .notification-icon {
+    font-size: 18px;
+  }
+
+  .avatar-container {
+    flex: 1 1 30%;
+    justify-content: flex-end;
+    gap: 10px;
+  }
+
+  .avatar-icon {
+    font-size: 32px;
+  }
+
+  .plus-icon {
+    font-size: 18px;
+  }
+}
+
+@media (min-width : 767px) {
+  .bar-icon {
+    display: none;
+  }
+}
+
+@media (max-width : 566px) {
+  .header-container {
+  
+}
+}
